@@ -1,0 +1,34 @@
+{
+    "name": "@aibulat/mark",
+    "version": "0.0.1",
+    "description": "Markdown CLI render",
+    "main": "dist/index.js",
+    "type": "module",
+    "bin": {
+        "mark": "dist/index.js"
+    },
+    "scripts": {
+        "test": "node --test",
+        "dev": "cat README.md | node dist/index.js",
+        "build": "tsc",
+        "build:watch": "tsc -w"
+    },
+    "keywords": [
+        "Markdown",
+        "Render",
+        "CLI"
+    ],
+    "author": "Aibulat",
+    "license": "MIT",
+    "dependencies": {
+        "@aibulat/isfile": "^0.0.4",
+        "commander": "^10.0.0",
+        "marked": "^4.2.12",
+        "marked-terminal": "^5.1.1"
+    },
+    "devDependencies": {
+        "@types/marked": "^4.0.8",
+        "@types/marked-terminal": "^3.1.3",
+        "@types/node": "^18.15.3"
+    }
+}
