@@ -1,9 +1,7 @@
-# mark
+### CLI Markdown Render
 
-# Hello
-
-This is **markdown** printed in the `terminal`
-
-```js
-console.log('Hi')
+```bash
+npm install -g @aibulat/mark
+cat somefile.md | mark
+mark -f somefile.md
 ```
